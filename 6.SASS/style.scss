@@ -1,0 +1,25 @@
+$primary-color: #3F51B5;
+
+body {
+  background-color: $primary-color;
+}
+@mixin button-style {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+     
+    &:hover {
+      background-color: #3e8e41;
+    }
+  }
+  
+  .primary-button {
+    @include button-style;
+  }
+  
+  .secondary-button {
+    @include button-style;
+    background-color: #ccc;
+  }
+  
